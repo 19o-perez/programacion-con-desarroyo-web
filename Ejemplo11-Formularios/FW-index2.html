@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO WEB-index2</title>
+</head>
+
+<body>
+    <!-- 
+        ACCIONES DE TRASLADO DE DATOS, TENDREMOS 2:
+                I) GET
+                Los datos viajaran en la URL, separados por  '?'
+                Sintaxis:
+                url?param1=valor1&param2=valor2&......
+            Uso y Abuso:
+                1)Sean pocos datos
+                2)Informacion de nivel confidencial, No
+                3)Peticiones Idempotentes (No se provocan cambios en el servidor)
+
+                II) POST
+                Los datos se trasladan no en la url si no en el 'cuerpo' de la peticion HTTP, no se verán en la
+                URL
+            Uso y Abuso:
+                1) Cuando hay muchos datos, de gran interrelaccinados, ed:masividad de datos
+                2) Informacion Confidencial o susceptible
+                3) Peticiones no idempotentes(Se pueden generar cambios en los datos del servidor: CRUD
+                     Cread, Read, Update, Delete)
+     -->
+    <div style="margin:0 auto ; text-align:left; width: 380px;">
+        <h2 style="text-align:center;">FORMULARIO WEB</h2>
+        <form action="GET" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="">Nombre</label>
+                <input type="text" name="nombreParam" id="" maxlength="15" size="21"
+                    placeholder="escribe tu nombre aqui" /> <br>
+                <label for="">Apellidos</label>
+                <input type="text" name="apellidoParam" id="" maxlength="15" size="21" value="Perez" disabled="true" />
+                <br>
+                <label for="">password</label>
+                <input type="password" name="pwParam" pattern="{6,}" title="seis o mas caracteres" id="" /><br><br>
+                <label for="">Sexo</label>
+                <input type="radio" name="sexoParam" value="Hombre" id="">Hombre
+                <input type="radio" name="sexoParam" value="Mujer" id="">Mujer
+                <input type="radio" name="sexoParam" value="Mujer" id="">Transgenero <br><br>
+                <label for="">Aficiones:</label>
+                <input type="checkbox" name="aficionParam" value="cine">Cine
+                <input type="checkbox" name="aficionParam" value="musica">Musica
+                <input type="checkbox" name="aficionParam" value="teatro">Teatro
+                <input type="checkbox" name="aficionParam" value="deporte">Deportes
+            </fieldset>
+            <fieldset>
+                <legend>Datos Academicos</legend>
+                <div>
+                    <label for="">Nivel de Estudios</label>
+                    <select name="estudiosParam">
+                        <option value="">-------------------</option>
+                        <option value="nada">Sin Estudios</option>
+                        <option value="eso">E.S.O</option>
+                        <option value="gm">Grado Medio</option>
+                        <option value="gs">Grado Superior</option>
+                        <option value="master">Master</option>
+                    </select><br><br>
+                    <label
+                        for="">Idiomas</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="idomasParam" id="">
+                        <option value="">-------------------</option>
+                        <option value="Ingles">Ingles</option>
+                        <option value="F">Frances</option>
+                        <option value="A">Aleman</option>
+                        <option value="I">Italiano</option>
+                        <option value="M">Mandarin</option>
+                    </select><br><br>
+                </div>
+                <div align="middle">
+                    <label for="">Adjuta tu CV:</label>
+                    <input type="file" name="cvParam" />
+                </div>
+
+                <legend>Danos tu opinion</legend>
+                <textarea name="opnionParam" id="" cols="40" rows="5"
+                    placeholder="Escribe un comentario aqui"></textarea><br>
+                Indica valoracion del formulario:(Regular, Bueno, o Muy Bueno)
+                <input type="range" name="rangoParam" id="" min="1" max="3" list="Lista-rango" />
+                <datalist id="lista-rango">
+                    <option value="Fatal">Regular</option>
+                    <option value="Mediocreidad">Bueno</option>
+                    <option value="Exito">Muy Bueno</option>
+                </datalist><br>
+            </fieldset>
+            <div align="middle">
+                <input type="submit" value="ENVIAR" id="" />
+            </div>
+            <p>file:///C:/Users/Alejandro/Desktop/programacion-con-desarroyo-web/ejemplo11-Formularios/GET?
+                nombreParam=Alejandro&pwParam=12346&sexoParam=Hombre&aficionParam=cine&estudiosParam=eso&
+                idomasParam=Ingles&cvParam=f6e1937ea38d44004ec9bbcc585454d47e1a153c+%282%29.jpg&opnionParam
+                =Aprendiendo+chino+Mandarin&rangoParam=3
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
