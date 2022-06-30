@@ -1,0 +1,110 @@
+form,h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+/* 
+ASOCIACION ( : )
+Selector conjugando etiquetas y atributos
+*/
+input:disabled {
+    color: red;
+    /* opacity: 1; */
+}
+/* 
+Asociado a accion determinada
+*/
+input:focus{
+    border: thick solid cyan;
+}
+/* 
+Asociada a una accion de boton
+*/
+label:active{
+    background-color: cyan;
+}
+/* 
+Asociacion de atequetas, atributos checkbox + accion (input)
+para asociar etiquetas y estilos, utilizaremos el selector adyacente ( + )
+*/
+input[type=checkbox]:checked+label{
+    font-weight:bold;
+    color: green;
+    font-size:xx-large;
+}
+/* 
+Diferenciar ASOCIACION(intervencion de una accion) con CONMUTACION DE ELEMENTOS
+*/
+form label{
+    color: blue;
+    font-weight: bolder;
+}
+form label span{
+font-size: xx-small;
+color: black;
+}
+/* 
+SELECTORES CON DIRECTIVA
+*/
+/* 
+1.Comienzo de una seleccion, inicio de caracter
+*/
+ol li[id^='J']{
+    background-color: pink;
+}
+/* 2.Que contenga la seleccion */
+ol li[id*='a']{
+    background-color: cadetblue;
+}
+/* Que finalize la seleccion */
+ol li[id$='s']{
+    background-color: red;
+}
+table,tr,td{
+    width: 30%;
+    border: thin solid navy;
+    border-collapse: collapse;
+    caption-side: top;
+    text-align: center;
+    margin:  0 auto;
+}
+/* 
+pseudo-clases;
+sintaxis: [elemento, clase, o grupo de elementos]:nth-child(posicion, )
+*/
+tr:nth-child(even){
+    background-color: salmon;
+}
+tr:nth-child(odd){
+    background-color: chartreuse;
+}
+/* 
+Los mas usados y de gran recurso seran los pseudo elementos:
+:first-child(seleccion del primer elemento)
+:first-letter(seleccion primera letra)
+:before(Nos posiciona al inicio del contenido)
+:after(Nos posiciona al final del contenido)
+:nth-of-type(En funcion de la posicion del elemento)
+*/
+ul li:first-child{
+    background-color: bisque;
+}
+ul li:nth-child(5){
+    background-color: burlywood;
+}
+/* 
+Ejercicio:
+seleccionar de 3 parrafos el primero sus fuentes sean negras, gruesa y de tamaño x-large
+y el tercero color letra rojo.
+*/
+p{
+    color: blue;  
+  }
+p:nth-of-type(1){
+      color: black;
+      font-weight: bold ;
+      font-size: x-large;
+  }
+p:last-child{
+      color: red;
+  }
+  

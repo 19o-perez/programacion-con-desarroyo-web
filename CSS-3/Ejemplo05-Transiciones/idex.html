@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transicion basica</title>
+</head>
+
+<body>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0 auto;
+        }
+
+
+
+        li {
+            text-align: center;
+            padding: 5px;
+            transition:
+                margin-left 2s,
+                font-weight 2s,
+                font-size 2s;
+        }
+        /* 
+pseudo clase; Su referencia esta con asociacion (:), que transmite
+al usuario cierta interaccion con acciones de señalizacion. Pero no
+necesariamente activa hacia una accion
+*/
+        li:hover {
+            margin-left: 50px;
+            font-weight: bold;
+            font-size: xx-large;
+
+        }
+    </style>
+    <ul>
+        <li>🍕OPCION1</li>
+        <li>🍔OPCION2</li>
+        <li>🥙OPCION3</li>
+        <li>🥗OPCION4</li>
+        <li>🍗OPCION5</li>
+    </ul>
+</body>
+
+</html>

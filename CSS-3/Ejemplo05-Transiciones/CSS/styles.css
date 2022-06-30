@@ -1,0 +1,64 @@
+.centro{
+   
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+.menu{
+background-color: rgb(212, 205, 205);
+color: white;
+border-color: black;
+font-family: sans-serif, cursive;
+font-size: 30px;
+text-decoration: none;
+margin: 10px;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 2px 2px 2px rgb(132, 137, 137);
+transition:
+background-color 0.6s,
+border-radius 0.6s ;
+}
+.menu:hover{
+    background-color: rgb(238, 212, 212);
+    color: black;
+    box-shadow: 2px 2px 2px rgb(132, 137, 137);
+    border-radius: 5px;
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+#texto{
+    background-color: cyan;
+    color: blueviolet;
+    text-align: justify;
+    box-shadow: 3px 3px 3px rgb(163, 170, 170);
+    border-radius: 9px;
+    font-size: large;
+    font-weight: bold;
+    padding: 1em;
+    transition: background-color 3s, width 3s, height 3s, margin 3s;
+
+}
+#texto:hover{
+    width: 98%;
+    background-color: blueviolet;
+    color: cyan;
+    margin: 0 auto;
+    text-align: justify;
+    box-shadow: 6px 6px 6px rgb(109, 13, 109);
+}
+#caja{
+    width: 30em;
+    background-color:gainsboro;
+    border-radius: 9px;
+    padding: 1em;
+    font-weight: bold;
+    transition: width 2s, height 3s, background-color 4s, margin 8s;
+}
+#caja:hover{
+    width: 70%;
+    background-color: grey;
+    margin: 0 auto;
+    text-align: center;
+}

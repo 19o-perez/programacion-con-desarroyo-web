@@ -1,0 +1,11 @@
+p{
+  color: blue;  
+}
+p:nth-of-type(1){
+    color: black;
+    font-weight: bold ;
+    font-size: x-large;
+}
+p:last-child{
+    color: red;
+}
