@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO WEB</title>
+    <link rel="stylesheet" href="CSS/stylesFor.css">
+    <link rel="icon" href="Images/formularios-de-google.png" type="image/png">
+    
+</head>
+
+<body>
+    
+    <a name="arriba"></a>
+    <div><a href="Pagina-Principal.html"><img src="Images/regreso.png" width="7%" alt=""></a></div>
+    <div style="margin:0 auto ; text-align:left; width: 380px;">
+        <h2 style="background-color: aquamarine ; text-align:center;">VAMOS A CONOCERNOS</h2>
+        <form action="GET" method="get">
+            <fieldset style="background-color: aquamarine;">
+                <legend
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Datos personales</legend>
+                <label style="font-family: cursive;" for="">Nombre</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="nombreParam" id="" maxlength="15" size="21" placeholder-color="" /> <br>
+                <label style="font-family: cursive;" for="">Apellidos</label>&nbsp;&nbsp;
+                <input type="text" name="apellidoParam" id="" maxlength="15" size="21" value="" />
+                <br>
+                <label style="font-family: cursive;" for="">Estilo</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" name="pwParam" pattern="{6,}" title="seis o mas caracteres" id="" /><br><br>
+                <label style="font-family: cursive;" for="">Sexo:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="sexoParam" value="Hombre" id="">Hombre
+                <input type="radio" name="sexoParam" value="Mujer" id="">Mujer
+                <input type="radio" name="sexoParam" value="Mujer" id="">Transgénero <br><br>
+                <label style="font-family: cursive;" for="">Aficiones:</label>
+                <input type="checkbox" name="aficionParam" value="Freestyle">Freestyle
+                <input type="checkbox" name="aficionParam" value="Longboard">Longboard
+                <input type="checkbox" name="aficionParam" value="Shortboard">Shortboard 
+                <input type="checkbox" name="aficionParam" value="MountainBoards">MountainBoards
+            </fieldset>
+            <fieldset style="background-color: aquamarine;">
+                <legend
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    NIVEL</legend>
+                <div>
+                    <label style="font-family: cursive;" for="">Nivel de skate</label>
+                    <select name="estudiosParam">
+                        <option value="">---------------------------</option>
+                        <option value="nada">Sin equilibrio</option>
+                        <option value="eso">Me mantengo</option>
+                        <option value="skbdrLL">skateboarder low l.</option>
+                        <option value="skbdrML">skateboarder medium l.</option>
+                        <option value="skbdrHL">skateboarder high l.</option>
+                    </select><br><br>
+                    <label style="font-family: cursive;"
+                        for="">Trucos</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="idomasParam" id="">
+                        <option value="">-------------------</option>
+                        <option value="Ollie">Ollie</option>
+                        <option value="Pop Shove It">Pop Shove It</option>
+                        <option value="Frontside Ollie">Frontside Ollie</option>
+                        <option value="Backside Ollie">Backside Ollie</option>
+                        <option value="Kickflip">Kickflip</option>
+                    </select><br><br>
+                </div>
+                <div align="middle">
+                    <label style="font-family: cursive;" for="">Mándanos tus mejores trucos:</label>
+                    <input type="file" name="cvParam" />
+                </div>
+
+                <legend style="font-family: cursive;">Danos tu opinion</legend>
+                <textarea name="opinionParam" id="" cols="40" rows="5"
+                    placeholder="Sin miedo al exito"></textarea>
+                <p style="font-family: cursive;">Indica valoracion del formulario:(Regular, Bueno, o Muy Bueno)</p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="range" name="rangoParam" id="" min="1" max="3" list="Lista-rango" />
+                <datalist id="lista-rango">
+                    <option value="Fatal">Regular</option>
+                    <option value="Mediocreidad">Bueno</option>
+                    <option value="Exito">Muy Bueno</option>
+                </datalist><br>
+            </fieldset>
+            <div align="middle">
+                <input type="submit" value="ENVIAR" id="" />
+            </div>
+        </form>
+    </div><br>
+    <div style="display:inline ; margin: 0 47%">
+        <a href="#arriba"><img src="Images/flechaArriba.png" width="6%" alt=""></a>
+    </div>
+</body>
+
+</html>
